@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head lang="fr">
+      <title>Vidéo</title>
+       <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="favicon.ico" />
+
+        <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+          
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <!-- Font-awesome -->            
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+        <!-- Lib Axios pour Ajax -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <link rel="stylesheet" href="../../css/style.css">
+        
+    </head>
+    <body class="bg-dark">
+        <div class="container">
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="../../index.html">Vidéo</a>
+
+                    <button class="navbar-toggler" 
+                      type="button" data-toggle="collapse" 
+                      data-target="#navbarNav" 
+                      aria-controls="navbarNav" 
+                      aria-expanded="false" 
+                      aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+              
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                
+                        <ul class="navbar-nav">
+              
+                            <li class="nav-item">
+                                <a class="nav-link" href="../films.html">Films</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../series.html">Séries</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../kids.html">Kids</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../mangas.html">Mangas</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../monCompte.html">MonCompte</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="../mesVideos.html">Mes vidéos</a>
+                            </li>
+
+                           
+                        </ul >
+
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                            
+                            <a class="nav-link dropdown-toggle " 
+                               href="#" 
+                               id="navbarDropdown" 
+                               role="button" 
+                               data-toggle="dropdown" 
+                               aria-haspopup="true" 
+                               aria-expanded="false">
+                              Administration
+                            </a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+                              <a class="dropdown-item" href="../video/liste.html">Vidéos</a>
+                              <a class="dropdown-item" href="../participant/liste.html">Participants</a>
+                              <a class="dropdown-item" href="../categorie/liste.html">Catégories</a>
+                              <a class="dropdown-item" href="../format/liste.html">Formats</a>
+                              <a class="dropdown-item" href="../client/liste.html">Clients</a>
+                              <a class="dropdown-item" href="../abonnement/liste.html">Abonnements</a>
+                              <a class="dropdown-item" href="../ville/liste.html">Villes</a>
+                              <a class="dropdown-item" href="../departement/liste.html">Départements</a>
+                              <a class="dropdown-item" href="../pays/liste.html">Pays</a>
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="card bg-dark">
+                <div class="card-header">
+                    <h5>Liste des clients
+                        <span class="float-right" title="Créer un nouveau client">
+                            <a href="#" >
+                                <i class="fa fa-plus fa-lg text-light"></i>
+                            </a>
+                        </span>
+                    </h5>
+                </div>    
+                                
+                <div class="card-body table-responsive">
+                    <table class="table text-light">
+                        <thead>
+                            <tr>                      
+                                <th scope="col">Nom</th>
+                                <th scope="col">Prénom</th>
+                                <th scope="col">Ville</th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                                <td><b>Adjassin</b></td>
+                                <td>Badeba</td>
+                                <td>Belfort</td>
+                                <td>
+                                    <span title="Supprimer le client">
+                                        <a href="#">
+                                            <i class="fa fa-times fa-lg text-light" ></i>
+                                        </a>
+                                    </span>
+                                    <span  title="Modifier le client">
+                                        <a href="#" >
+                                            <i class="fa fa-edit fa-lg text-light" ></i>
+                                        </a>
+                                    </span>    
+                                    <span title="Gérer les abonnements du client">
+                                        <a href="#" >
+                                            <i class="fa fa-address-card fa-lg text-light" ></i>
+                                        </a>
+                                    </span>               
+                                </td>
+                            </tr>
+                          
+                            <tr>
+                                <td><b>Alphonse</b></td>
+                                <td>Alfred</td>
+                                <td>Audincourt</td>
+                                <td>
+                                    <span title="Supprimer le client">
+                                        <a href="#">
+                                            <i class="fa fa-times fa-lg text-light" ></i>
+                                        </a>
+                                    </span>
+                                    <span  title="Modifier le client">
+                                        <a href="#" >
+                                            <i class="fa fa-edit fa-lg text-light" ></i>
+                                        </a>
+                                    </span>    
+                                    <span title="Gérer les abonnements du client">
+                                        <a href="#" >
+                                            <i class="fa fa-address-card fa-lg text-light" ></i>
+                                        </a>
+                                    </span>               
+                                </td>
+                           </tr>
+                          
+                       
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </body>            
+      
+</html>

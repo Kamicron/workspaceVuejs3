@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head lang="fr">
+      <title>Vidéo</title>
+       <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="favicon.ico" />
+
+        <!-- Bootstrap 4 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+          
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <!-- Font-awesome -->            
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+        <!-- Lib Axios pour Ajax -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <link rel="stylesheet" href="../css/style.css">
+        
+    </head>
+    <body class="bg-dark">
+        <div class="container">
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="../index.html">Vidéo</a>
+
+                    <button class="navbar-toggler" 
+                      type="button" data-toggle="collapse" 
+                      data-target="#navbarNav" 
+                      aria-controls="navbarNav" 
+                      aria-expanded="false" 
+                      aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+              
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                
+                        <ul class="navbar-nav">
+              
+                            <li class="nav-item">
+                                <a class="nav-link" href="films.html">Films</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="series.html">Séries</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="kids.html">Kids</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="mangas.html">Mangas</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="monCompte.html">MonCompte</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="mesVideos.html">Mes vidéos</a>
+                            </li>
+
+                           
+                        </ul >
+
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                            
+                            <a class="nav-link dropdown-toggle " 
+                               href="#" 
+                               id="navbarDropdown" 
+                               role="button" 
+                               data-toggle="dropdown" 
+                               aria-haspopup="true" 
+                               aria-expanded="false">
+                              Administration
+                            </a>
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+                              <a class="dropdown-item" href="video/liste.html">Vidéos</a>
+                              <a class="dropdown-item" href="participant/liste.html">Participants</a>
+                              <a class="dropdown-item" href="categorie/liste.html">Catégories</a>
+                              <a class="dropdown-item" href="format/liste.html">Formats</a>
+                              <a class="dropdown-item" href="client/liste.html">Clients</a>
+                              <a class="dropdown-item" href="abonnement/liste.html">Abonnements</a>
+                              <a class="dropdown-item" href="ville/liste.html">Villes</a>
+                              <a class="dropdown-item" href="departement/liste.html">Départements</a>
+                              <a class="dropdown-item" href="pays/liste.html">Pays</a>
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="container ">                
+                <div class="row"> 
+                    <div class="card bg-dark">
+                        <div class="card-header">
+                            <strong>Liste des séries disponibles</strong>
+                        </div>
+                        <div class="card-body table-responsive">
+                            <table class="table text-light">
+                                <thead>
+                                    <tr>
+                                        <td>Vidéos</td>
+                                        <td>Infos</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">
+                                            <h5 class="media-heading"><b>Games Of Thrones</b></h5>
+                                            <img class="media-object imageSmall" src="../imagesvideos/gamesofthrones-saison4.png" alt="Game of thrones">
+                                        </td>
+                                        <td>
+
+                                            <div>
+                                                <span class="libelle">Nationalités : </span>
+                                                <span>Etats-Unis</span>
+                                            </div>
+                                            <div>
+                                                <span class="libelle">Réalisateurs : </span>
+                                                <span>D.B. Weiss, David Benioff</span>
+                                            </div>
+                                            <div>
+                                                <span class="libelle">Acteurs : </span>
+                                                <span>Kit Harington, Emilia Clarke, Peter Dinklage</span>
+                                            </div>
+                                            <div>
+                                                <span class="libelle">Catégories : </span>
+                                                <span>Action Aventure Fantastique Drame</span>
+                                            </div>
+                                            <div>
+                                                <div class="libelle">Synopsis : </div>
+                                                <div>
+                                                     Il y a très longtemps, à une époque oubliée, une force a détruit l'équilibre des saisons. Dans un pays où l'été peut dur...
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <h5 class="media-heading"><b>Revolution</b></h5>
+                                            <img class="imageSmall" src="../imagesvideos/revolution-saison1.jpg" alt="Revolution">
+                                        </td>
+                                        <td>
+
+                                            <div>
+                                                <span class="libelle">Nationalités : </span><span>Etats-Unis</span>
+                                            </div>
+                                            <div>
+                                                <span class="libelle">Réalisateurs : </span><span>Eric Kripke</span>
+                                            </div>
+                                            <div>
+                                                <span class="libelle">Acteurs : </span><span>Billy Burke, Tracy Spiridakos, Giancarlo Esposito</span>
+                                            </div>
+                                            <div>
+                                                <span class="libelle">Catégories : </span>
+                                                <span class="texte">Aventure Science-Fiction Drame</span>
+                                            </div>
+                                            <div>
+                                                <div class="libelle">Synopsis : </div>
+                                                <div>
+                                                    Le monde bascule dans une ère sombre lorsque l'électricité cesse soudainement de fonctionner. Sans technologie moderne, ...
+                                                </div>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>   
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
