@@ -5,6 +5,7 @@ import SeriesView from '../views/SeriesView.vue'
 import MangasView from '../views/MangasView.vue'
 import KidsView from '../views/KidsView.vue'
 import ListeView from '../views/pays/ListeView.vue'
+import CategorieView from '../views/pays/CategorieView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,7 @@ const router = createRouter({
     { path: '/mangas',     name: 'MangasView',     component: MangasView },
     { path: '/kids',     name: 'KidsView',     component: KidsView },
     { path: '/pays',     name: 'ListeView',     component: ListeView },
+    { path: '/cat',     name: 'CategorieView',     component: CategorieView },
   ]
 })
 

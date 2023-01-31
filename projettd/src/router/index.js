@@ -5,6 +5,7 @@ import Tp01View from '../views/Tp01View.vue'
 import Td02View from '../views/Td02View.vue'
 import Tp02View from '../views/Tp02View.vue'
 import Td03View from '../views/Td03View.vue'
+import Td04View from '../views/Td04View.vue'
 
 
 const router = createRouter({
@@ -16,6 +17,7 @@ const router = createRouter({
     { path: '/td02',      name: 'Td02View',      component: Td02View },
     { path: '/tp02',      name: 'Tp02View',      component: Tp02View },
     { path: '/td03',      name: 'Td03View',      component: Td03View },
+    { path: '/td04',      name: 'Td04View',      component: Td04View },
 
   ]
 })

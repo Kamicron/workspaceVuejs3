@@ -69,9 +69,9 @@ import { RouterLink, RouterView } from "vue-router";
               <a class="dropdown-item" href="pages/participant/liste.html"
                 >Participants</a
               >
-              <a class="dropdown-item" href="pages/categorie/liste.html"
-                >Catégories</a
-              >
+              <div class="dropdown-item" href="pages/cat/liste.html">
+                <RouterLink to="/cat">catégories</RouterLink>
+              </div>
               <a class="dropdown-item" href="pages/format/liste.html"
                 >Formats</a
               >
